@@ -7,6 +7,7 @@ export interface Feedback {
 export interface FeedbackContextProps {
   feedbacks: Feedback[];
   onAddFeedback: (newFeedback: Feedback) => void;
+  isLoading: boolean;
   onDeleteFeedback: (id: string) => void;
   onEditFeedback: (feedbackItem: Feedback) => void;
   onUpdateFeedback: (id: string, updatedFeedbackItem: Feedback) => void;
